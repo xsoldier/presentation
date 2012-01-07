@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+cs:
+  plugins:
+    events:
+      title: Kalendář
+      index:
+        create_new: Nový záznam
+        reorder: Přeuspořádat
+        reorder_done: Dokončeno
+      form:
+        name: Název události
+        event_date: Datum události
+        image: Přiložený obrázek
+        file: Přiložený soubor
+        text: Text události
