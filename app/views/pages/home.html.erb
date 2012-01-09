@@ -1,1 +1,26 @@
-<%= render :partial => "/shared/content_page" %>
+<%#= render :partial => "/shared/content_page" %>
+
+<div class="content_home">
+  <div class="first">
+    <div class="title"><%= t("first_box.title") %></div>
+    <div class="head"></div>
+    <div class="body">
+      <%= raw @page.content_for(:body) %>
+    </div>
+    <div class="foot"></div>
+  </div>
+
+  <div class="second">
+    <div class="title"><%= t("second_box.title") %></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="foot"></div>
+  </div>
+
+  <div class="third">
+    <div class="title"><%= t("third_box.title") %></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="foot"></div>
+  </div>
+</div>

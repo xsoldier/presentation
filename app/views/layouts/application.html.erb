@@ -10,6 +10,10 @@
         <%= render :partial => "/shared/header" -%>
       </header>
       <section id='page'>
+        <div class="redban">
+          <p><%= raw t("redban.text_1") %></p>
+          <p class="smaller"><%= raw t("redban.text_2") %></p>
+        </div>
         <%= yield %>
       </section>
       <footer>

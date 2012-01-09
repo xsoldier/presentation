@@ -17,7 +17,6 @@
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
-                             "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js",
-                             'modernizr-min', "event_calendar", "jquery.datepicker", "application" %>
-  <%= stylesheet_link_tag "event_calendar", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
+                             'modernizr-min', "event_calendar", "application" %>
+  <%= stylesheet_link_tag "event_calendar", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "main" %>
 </head>

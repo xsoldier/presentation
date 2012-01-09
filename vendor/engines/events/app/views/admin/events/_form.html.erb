@@ -11,7 +11,7 @@
   
   <div class='field'>
     <%= f.label :event_date, t("plugins.events.form.event_date") -%>
-    <%= f.text_field :event_date, :class => "datepicker"  -%>
+    <%= f.date_select :event_date, :class => "datepicker"  -%>
   </div>
   
   <div class='field'>
@@ -68,3 +68,4 @@
     });
   </script>
 <% end %>
+

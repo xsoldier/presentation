@@ -1,0 +1,30 @@
+cs:
+  shared:
+    admin:
+      image_picker:
+        image: obrázek
+  plugins:
+    events:
+      form:
+        name: Název
+        image: Přiložený obrázek
+        file: Přiložený soubor
+        event_date: Datum události
+      title: Kalendář
+  admin:
+    events:
+      actions:
+        create_new: Přidat záznam
+        reorder: Přeuspořádat
+        reorder_done: Hotovo
+      records:
+        title: Záznam kalendáře
+        sorry_no_results: Nebyly nalezeny žádné záznamy
+        no_items_yet: Zatím zde nejsou žádné záznamy. Klikněte na Přidat záznam.
+      event:
+        view_live_html: Podívat se na záznam na webu <br/><em>(otevřít v novém okně)</em>
+        edit: Upravit
+        delete: Smazat
+  events:
+    show:
+      other: Ostatní záznamy

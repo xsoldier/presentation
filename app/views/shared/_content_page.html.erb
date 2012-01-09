@@ -58,6 +58,27 @@
   end
 -%>
 <section id='body_content'<%= " class='#{css.join(' ')}'" if css.present? %>>
-  <%= raw sections.map{|section| section[:html]}.join("\n") -%>
+  <div class="content_other">
+  <div class="long">
+    <div class="title"><%= @page.title %></div>
+    <div class="head"></div>
+    <div class="body">
+      <%= raw @page.content_for(:body) %>
+    </div>
+    <div class="foot"></div>
+  </div>
+
+  <div class="third">
+    <div class="title"><%= t("third_box.title") %></div>
+    <div class="head"></div>
+    <div class="body">
+      <% Event.limit(3).each do |event| %>
+        <%= event.name %>
+      <% end %>
+    </div>
+    <div class="foot"></div>
+  </div>
+</div>
+  <%#= raw sections.map{|section| section[:html]}.join("\n") -%>
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
