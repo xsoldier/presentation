@@ -288,7 +288,8 @@ section .redban {
     float: right;
     width: 70%; }
 .calendar p {
-  padding: 0 !important; }
+  padding: 0 !important;
+  line-height: 23px; }
 
 .padding_div {
   padding: 15px 40px 30px 40px; }
