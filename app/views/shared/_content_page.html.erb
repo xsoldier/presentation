@@ -60,10 +60,10 @@
 <section id='body_content'<%= " class='#{css.join(' ')}'" if css.present? %>>
   <div class="content_other">
   <div class="long">
-    <div class="title"><%= @page.title %><%= raw t("contact.title1") if @page.link_url == "/contact" %></div>
+    <div class="title"><%= @page.title unless @page.link_url == "/contact" %><%= raw t("contact.title1") if @page.link_url == "/contact" %></div>
     <div class="head"></div>
     <div class="body">
-      <div class="padding_div"><%= raw @page.content_for(:body) %></div>
+      <div class="padding_div"><%= raw @page.content_for(:body) unless @page.link_url == "/contact" %></div>
       <%= raw sections.map{|section| section[:html]}.join("\n") if @page.link_url == "/contact" -%>
       <div class="clear"></div>
     </div>
@@ -100,7 +100,7 @@
 </div>
 
 </section>
-<%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
+<%#= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
 
 <% if @page.link_url == "/contact" %>
  <%= javascript_tag do %>
