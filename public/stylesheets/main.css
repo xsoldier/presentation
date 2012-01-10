@@ -16,10 +16,12 @@ p {
   margin: 0; }
 
 .title a {
-  text-decoration: none; }
-  .title a:visited {
-    text-decoration: none;
+  text-decoration: none;
+  color: #bc0f0b; }
+  .title a:active {
     color: #bc0f0b; }
+  .title a:hover {
+    text-decoration: underline; }
 
 .body a {
   color: #bc0f0b; }
@@ -41,7 +43,7 @@ body {
 header .logo {
   width: 174px;
   float: left;
-  margin: 20px 20px; }
+  margin: 15px 20px; }
   header .logo a {
     height: 73px;
     width: 174px;
@@ -51,13 +53,15 @@ header .logo {
 header nav {
   float: right;
   width: auto;
-  margin: 33px 20px; }
+  margin: 28px 20px; }
   header nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: black !important;
     padding: 0 10px;
     font-size: 18px; }
+    header nav a:hover {
+      color: #bc0f0b !important; }
   header nav ul {
     float: left;
     list-style: none; }
@@ -79,7 +83,7 @@ section .redban {
   section .redban p {
     line-height: 50px;
     padding: 43px 0 0 40px;
-    text-shadow: 1px 1px 1px #000; }
+    text-shadow: 1px 1px 1px #980201; }
     section .redban p.smaller {
       font-size: 28px;
       padding-top: 0px; }
@@ -226,9 +230,11 @@ section .redban {
   height: 200px;
   clear: left;
   background: url("../images/bulb.png") no-repeat;
-  background-position: top right; }
+  background-position: top right;
+  position: relative;
+  top: -11px; }
   .footer .footer_section {
-    padding: 15px 20px; }
+    padding: 27px 20px; }
     .footer .footer_section img {
       float: left; }
     .footer .footer_section p {
@@ -278,8 +284,7 @@ section .redban {
   color: #bc0f0b;
   font-size: 14pt; }
 .calendar .event {
-  padding: 10px 40px;
-  margin-bottom: 15px; }
+  padding: 10px 40px; }
   .calendar .event .event_date {
     text-transform: uppercase;
     float: left;

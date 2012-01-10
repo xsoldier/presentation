@@ -26,9 +26,12 @@ p {
 
 .title a {
   text-decoration: none;
-  &:visited {
-    text-decoration: none;
+  color: $font_red;
+  &:active {
     color: $font_red;
+  }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -54,7 +57,7 @@ header {
   .logo {
     width: 174px;
     float: left;
-    margin: 20px 20px;
+    margin: 15px 20px;
     a {
       height: 73px;
       width:  174px;
@@ -66,13 +69,16 @@ header {
   nav {
     float: right;
     width: auto;
-    margin: 33px 20px;
+    margin: 28px 20px;
     a {
       text-transform: uppercase;
       text-decoration: none;
       color: black !important;
       padding: 0 10px;
       font-size: 18px;
+      &:hover {
+        color: $font_red !important;
+      }
     }
     ul {
       float: left;
@@ -103,7 +109,7 @@ section {
     p {
       line-height: 50px;
       padding: 43px 0 0 40px;
-      text-shadow: 1px 1px 1px #000;
+      text-shadow: 1px 1px 1px #980201;
       &.smaller {
         font-size: 28px;
         padding-top: 0px;
@@ -308,8 +314,10 @@ section {
   clear: left;
   background: url("../images/bulb.png") no-repeat;
   background-position: top right;
+  position: relative;
+  top: -11px;
   .footer_section {
-    padding: 15px 20px;
+    padding: 27px 20px;
     img {
       float: left;
     }
@@ -381,7 +389,7 @@ section {
   }
   .event {
     padding: 10px 40px;
-    margin-bottom: 15px;
+    //margin-bottom: 15px;
     .event_date {
       text-transform: uppercase;
       float: left;
