@@ -10,11 +10,6 @@
   </div>
   
   <div class='field'>
-    <%= f.label :event_date, t("plugins.events.form.event_date") -%>
-    <%= f.date_select :event_date, :class => "datepicker"  -%>
-  </div>
-  
-  <div class='field'>
     <%= f.label :image, t("plugins.events.form.image") -%>
     <%= render :partial => "/shared/admin/image_picker", :locals => {
           :f => f,

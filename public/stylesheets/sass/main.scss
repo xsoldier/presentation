@@ -1,5 +1,6 @@
 $font_red: #bc0f0b;
 $font_base: #5B5B5B;
+$gray_border: #d5d5d7;
 
 
 @font-face{
@@ -22,6 +23,20 @@ $font_base: #5B5B5B;
 p {
   margin: 0;
 }
+
+.title a {
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+    color: $font_red;
+  }
+}
+
+.body a {
+  color: $font_red;
+}
+
+.clear {clear: both; padding: 5px;}
 
 body {
   background: url("../images/bg.png") repeat;
@@ -55,7 +70,7 @@ header {
     a {
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: black !important;
       padding: 0 10px;
       font-size: 18px;
     }
@@ -68,7 +83,7 @@ header {
         list-style: none;
         &.selected {
           a {
-            color: $font_red;
+            color: $font_red !important;
           }
         }
       }
@@ -126,6 +141,7 @@ section {
       width: 292px;
       background: url("../images/box_body.png") repeat-y;
       text-align: center;
+      overflow: hidden;
       p {
         padding: 10px 40px;
         line-height: 25px;
@@ -184,6 +200,7 @@ section {
     .body {
       width: 292px;
       background: url("../images/box_body.png") repeat-y;
+      overflow: hidden;
     }
     .foot {
       width: 292px;
@@ -218,11 +235,19 @@ section {
     .body {
       width: 292px;
       background: url("../images/box_body.png") repeat-y;
-      text-align: center;
-      height: 500px;
+      //text-align: center;
+      min-height: 500px;
+      max-height: 500px;
+      &.contact {
+        min-height: 200px;
+      }
       p {
-        padding: 10px 40px;
         line-height: 25px;
+      }
+      h3, h2, h1 {
+        margin: 0;
+        color: $font_red;
+        font-size: 14pt;
       }
     }
     .foot {
@@ -249,7 +274,6 @@ section {
       background: url("../images/boxlong_body.png") repeat-y;
       min-height: 500px;
       p {
-        padding: 15px 40px 30px 40px;
         line-height: 25px;
       }
       img {
@@ -258,9 +282,15 @@ section {
       }
       h2 {
         color: $font_red;
+        font-size: 20px;
+      }
+      h3 {
+        color: $font_red;
         font-size: 18px;
-        padding-left: 40px;
-        padding-right: 40px;
+      }
+      h1 {
+        color: $font_red;
+        font-size: 22px;
       }
     }
     .foot {
@@ -289,4 +319,87 @@ section {
       padding-top: 11px;
     }
   }
+}
+
+.inquiries {
+  padding-left: 40px;
+  //padding-top: 40px;
+  div {
+    clear: both;
+  }
+  label {
+    float: left;
+    line-height: 40px;
+  }
+  input[type="text"], textarea {
+    width: 490px;
+    margin-bottom: 25px;
+    border: 1px solid $gray_border;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  }
+  input, textarea {
+    float: right;
+    margin-right: 40px;
+  }
+
+  input[type="text"] {
+    height: 30px;
+  }
+
+  #inquiry_submit {
+    width: 92px;
+    color: white;
+    height: 39px;
+    text-shadow: 1px 1px black;
+    background: url("../images/btn_send.png") no-repeat;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+
+
+}
+
+.errorExplanation {
+  color: red;
+  p {
+    padding: 0 !important;
+  }
+}
+
+.calendar {
+  hr {
+    width: 80%;
+    border-width: 0;
+    border-top: 1px solid $gray_border;
+  }
+  h3 {
+    margin: 0;
+    color: $font_red;
+    font-size: 14pt;
+  }
+  .event {
+    padding: 10px 40px;
+    margin-bottom: 15px;
+    .event_date {
+      text-transform: uppercase;
+      float: left;
+      width: 30%;
+    }
+    .event_content {
+      float: right;
+      width: 70%;
+    }
+  }
+  p {
+    padding: 0 !important;
+
+  }
+
+}
+
+
+.padding_div {
+  padding: 15px 40px 30px 40px;
 }

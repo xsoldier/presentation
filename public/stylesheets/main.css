@@ -15,6 +15,19 @@
 p {
   margin: 0; }
 
+.title a {
+  text-decoration: none; }
+  .title a:visited {
+    text-decoration: none;
+    color: #bc0f0b; }
+
+.body a {
+  color: #bc0f0b; }
+
+.clear {
+  clear: both;
+  padding: 5px; }
+
 body {
   background: url("../images/bg.png") repeat;
   font-family: 'myfont';
@@ -42,7 +55,7 @@ header nav {
   header nav a {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: black !important;
     padding: 0 10px;
     font-size: 18px; }
   header nav ul {
@@ -53,7 +66,7 @@ header nav {
       float: left;
       list-style: none; }
       header nav ul li.selected a {
-        color: #bc0f0b; }
+        color: #bc0f0b !important; }
 
 section .redban {
   width: 950px;
@@ -93,7 +106,8 @@ section .redban {
   .content_home .first .body {
     width: 292px;
     background: url("../images/box_body.png") repeat-y;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     .content_home .first .body p {
       padding: 10px 40px;
       line-height: 25px; }
@@ -134,7 +148,8 @@ section .redban {
     background: url("../images/box_head.png") no-repeat; }
   .content_home .third .body {
     width: 292px;
-    background: url("../images/box_body.png") repeat-y; }
+    background: url("../images/box_body.png") repeat-y;
+    overflow: hidden; }
   .content_home .third .foot {
     width: 292px;
     height: 18px;
@@ -160,11 +175,16 @@ section .redban {
   .content_other .third .body {
     width: 292px;
     background: url("../images/box_body.png") repeat-y;
-    text-align: center;
-    height: 500px; }
+    min-height: 500px;
+    max-height: 500px; }
+    .content_other .third .body.contact {
+      min-height: 200px; }
     .content_other .third .body p {
-      padding: 10px 40px;
       line-height: 25px; }
+    .content_other .third .body h3, .content_other .third .body h2, .content_other .third .body h1 {
+      margin: 0;
+      color: #bc0f0b;
+      font-size: 14pt; }
   .content_other .third .foot {
     width: 292px;
     height: 18px;
@@ -183,16 +203,19 @@ section .redban {
     background: url("../images/boxlong_body.png") repeat-y;
     min-height: 500px; }
     .content_other .long .body p {
-      padding: 15px 40px 30px 40px;
       line-height: 25px; }
     .content_other .long .body img {
       float: left;
       margin-right: 20px; }
     .content_other .long .body h2 {
       color: #bc0f0b;
-      font-size: 18px;
-      padding-left: 40px;
-      padding-right: 40px; }
+      font-size: 20px; }
+    .content_other .long .body h3 {
+      color: #bc0f0b;
+      font-size: 18px; }
+    .content_other .long .body h1 {
+      color: #bc0f0b;
+      font-size: 22px; }
   .content_other .long .foot {
     width: 658px;
     height: 16px;
@@ -212,3 +235,60 @@ section .redban {
       font-size: 8pt;
       line-height: 18px;
       padding-top: 11px; }
+
+.inquiries {
+  padding-left: 40px; }
+  .inquiries div {
+    clear: both; }
+  .inquiries label {
+    float: left;
+    line-height: 40px; }
+  .inquiries input[type="text"], .inquiries textarea {
+    width: 490px;
+    margin-bottom: 25px;
+    border: 1px solid #d5d5d7;
+    background-color: #f7f7f7;
+    border-radius: 5px; }
+  .inquiries input, .inquiries textarea {
+    float: right;
+    margin-right: 40px; }
+  .inquiries input[type="text"] {
+    height: 30px; }
+  .inquiries #inquiry_submit {
+    width: 92px;
+    color: white;
+    height: 39px;
+    text-shadow: 1px 1px black;
+    background: url("../images/btn_send.png") no-repeat;
+    outline: none;
+    cursor: pointer;
+    border: none; }
+
+.errorExplanation {
+  color: red; }
+  .errorExplanation p {
+    padding: 0 !important; }
+
+.calendar hr {
+  width: 80%;
+  border-width: 0;
+  border-top: 1px solid #d5d5d7; }
+.calendar h3 {
+  margin: 0;
+  color: #bc0f0b;
+  font-size: 14pt; }
+.calendar .event {
+  padding: 10px 40px;
+  margin-bottom: 15px; }
+  .calendar .event .event_date {
+    text-transform: uppercase;
+    float: left;
+    width: 30%; }
+  .calendar .event .event_content {
+    float: right;
+    width: 70%; }
+.calendar p {
+  padding: 0 !important; }
+
+.padding_div {
+  padding: 15px 40px 30px 40px; }

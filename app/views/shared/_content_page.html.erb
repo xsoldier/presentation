@@ -60,25 +60,50 @@
 <section id='body_content'<%= " class='#{css.join(' ')}'" if css.present? %>>
   <div class="content_other">
   <div class="long">
-    <div class="title"><%= @page.title %></div>
+    <div class="title"><%= @page.title %><%= raw t("contact.title1") if @page.link_url == "/contact" %></div>
     <div class="head"></div>
     <div class="body">
-      <%= raw @page.content_for(:body) %>
+      <div class="padding_div"><%= raw @page.content_for(:body) %></div>
+      <%= raw sections.map{|section| section[:html]}.join("\n") if @page.link_url == "/contact" -%>
+      <div class="clear"></div>
     </div>
     <div class="foot"></div>
   </div>
 
   <div class="third">
-    <div class="title"><%= t("third_box.title") %></div>
+    <div class="title">
+      <% if @page.id == 3 %>
+        <%= t("third_box.title") %>
+      <% end %>
+      <%= raw t("contact.title2") if @page.link_url == "/contact" %>
+    </div>
     <div class="head"></div>
-    <div class="body">
-      <% Event.limit(3).each do |event| %>
-        <%= event.name %>
+    <div class="body <%= "contact" if @page.link_url == "/contact" %> <%= "calendar" if @page.id == 3 %>">
+      <% if @page.id == 3 %>
+        <% Event.order("id desc").limit(3).each do |event| %>
+          <div class="event">
+            <div class="event_date"><%= l event.created_at.to_date, :format => :short %></div>
+            <div class="event_content">
+              <h3><%= event.name %></h3>
+              <%= raw event.text %>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <%= raw "<hr/>" unless event == Event.first %>
+        <% end %>
+      <% else %>
+        <div class="padding_div"><%= raw @page.content_for(:side_body) %></div>
       <% end %>
     </div>
     <div class="foot"></div>
   </div>
 </div>
-  <%#= raw sections.map{|section| section[:html]}.join("\n") -%>
+
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
+
+<% if @page.link_url == "/contact" %>
+ <%= javascript_tag do %>
+   $("#inquiry_submit").attr("value", "Odoslať");
+ <% end %>
+<% end %>

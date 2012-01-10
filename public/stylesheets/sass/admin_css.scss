@@ -1,0 +1,20 @@
+@font-face{
+	font-family: 'myfont';
+	src:
+	     url('../fonts/light.otf') format('opentype');
+}
+@font-face{
+	font-family: 'myfont';
+  font-variant: regular;
+	src:
+	     url('../fonts/regular.otf') format('opentype');
+}
+@font-face{
+	font-family: 'myfont';
+  font-weight: bold;
+	src: url('../fonts/xbold.otf') format('opentype');
+}
+
+body {
+  font-family: 'myfont' !important;
+}

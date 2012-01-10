@@ -10,7 +10,7 @@ sk:
         image: Priložený obrázok
         file: Priložený súbor
         event_date: Datum události
-      title: Kalendár
+      title: Aktuality
   admin:
     events:
       actions:
@@ -18,7 +18,7 @@ sk:
         reorder: Preusporádať
         reorder_done: Hotovo
       records:
-        title: Záznam kalendáře
+        title: Aktualita
         sorry_no_results: Nieboly nalezeny žádné záznamy
         no_items_yet: Zatím zde nesu žiádné záznamy. Klikněte na Pridať záznam.
       event:

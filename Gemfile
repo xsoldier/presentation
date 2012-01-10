@@ -8,11 +8,10 @@ source 'http://rubygems.org'
 gem 'mysql2', '< 0.3'
 
 gem 'sass'
-gem 'event-calendar', :require => 'event_calendar'
 
 gem 'jquery-rails'
 gem 'exception_notification'
-gem 'simple_form'
+gem 'refinerycms-inquiries', '~> 1.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'

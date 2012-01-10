@@ -12,13 +12,16 @@ sk:
     text: "Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. Jelikož slunce jasně září a na obloze byste od východu k západu hledali"
 
   second_box:
-    title: "Ako ti možeme pomocť?"
+    title: "Ako ti môžeme pomôcť?"
     text1: "Vylepšíme tvoj nápad"
     text2: "Nájdeme mentora"
     text3: "Prefinancujeme prototyp"
 
   third_box:
-    title: "Podujatia"
+    title: "Aktuality"
   footer:
     text1: "Projekt Najlepší nápad organizuje BestGuest."
     text2: "Generálnym partnerom témy Obnoviteľné zdroje energie je Západoslovenská energetika."
+  contact:
+    title1: "Napíš nám! <strong>Určitě ti pomožeme.</strong>"
+    title2: "Kontakt"
