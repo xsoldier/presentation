@@ -13,6 +13,12 @@ sk:
 
   second_box:
     title: "Ako ti možeme pomocť?"
+    text1: "Vylepšíme tvoj nápad"
+    text2: "Nájdeme mentora"
+    text3: "Prefinancujeme prototyp"
 
   third_box:
     title: "Podujatia"
+  footer:
+    text1: "Projekt Najlepší nápad organizuje BestGuest."
+    text2: "Generálnym partnerom témy Obnoviteľné zdroje energie je Západoslovenská energetika."

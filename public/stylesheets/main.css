@@ -28,7 +28,7 @@ body {
 header .logo {
   width: 174px;
   float: left;
-  margin: 30px 20px; }
+  margin: 20px 20px; }
   header .logo a {
     height: 73px;
     width: 174px;
@@ -38,12 +38,12 @@ header .logo {
 header nav {
   float: right;
   width: auto;
-  margin: 43px 20px; }
+  margin: 33px 20px; }
   header nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    padding: 0 5px;
+    padding: 0 10px;
     font-size: 18px; }
   header nav ul {
     float: left;
@@ -65,7 +65,8 @@ section .redban {
   color: white; }
   section .redban p {
     line-height: 50px;
-    padding: 43px 0 0 40px; }
+    padding: 43px 0 0 40px;
+    text-shadow: 1px 1px 1px #000; }
     section .redban p.smaller {
       font-size: 28px;
       padding-top: 0px; }
@@ -111,7 +112,13 @@ section .redban {
     background: url("../images/box2_head.png") no-repeat; }
   .content_home .second .body {
     width: 353px;
-    background: url("../images/box2_body.png") repeat-y; }
+    background: url("../images/box2_body.png") repeat-y;
+    text-align: center; }
+    .content_home .second .body img {
+      margin-top: 16px;
+      clear: both; }
+    .content_home .second .body p {
+      text-transform: uppercase; }
   .content_home .second .foot {
     width: 353px;
     height: 18px;
@@ -190,3 +197,18 @@ section .redban {
     width: 658px;
     height: 16px;
     background: url("../images/boxlong_foot.png") no-repeat; }
+
+.footer {
+  width: 950px;
+  height: 200px;
+  clear: left;
+  background: url("../images/bulb.png") no-repeat;
+  background-position: top right; }
+  .footer .footer_section {
+    padding: 15px 20px; }
+    .footer .footer_section img {
+      float: left; }
+    .footer .footer_section p {
+      font-size: 8pt;
+      line-height: 18px;
+      padding-top: 11px; }

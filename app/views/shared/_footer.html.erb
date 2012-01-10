@@ -1,4 +1,10 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
-</p>
+
+<%#= t('.copyright', :year => Time.now.year,
+                    :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+
+<div class="footer">
+  <div class="footer_section">
+    <%= image_tag "footer_logo.png" %>
+    <p><%= t("footer.text1") %><br/><%= t("footer.text2") %></p>
+  </div>
+</div>
