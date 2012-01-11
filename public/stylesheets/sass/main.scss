@@ -364,6 +364,10 @@ section {
     margin-right: 40px;
   }
 
+  textarea {
+    height: 160px;
+  }
+
   input[type="text"] {
     height: 30px;
   }
@@ -372,15 +376,17 @@ section {
     width: 92px;
     color: white;
     height: 39px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px #980201;
     background: url("../images/btn_send.png") no-repeat;
     outline: none;
     cursor: pointer;
     border: none;
+    font-size: 16px;
   }
 
 
 }
+
 
 .errorExplanation {
   color: red;
