@@ -102,8 +102,3 @@
 </section>
 <%#= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
 
-<% if @page.link_url == "/contact" %>
- <%= javascript_tag do %>
-   $("#inquiry_submit").attr("value", "Odoslať");
- <% end %>
-<% end %>

@@ -1,4 +1,4 @@
-<% content_for :body_content_left do %>
+<%# content_for :body_content_left do %>
   <div class='inquiries'>
     <%= form_for @inquiry do |f| %>
       <%= render :partial => "/shared/admin/error_messages",
@@ -23,10 +23,10 @@
         <%= f.text_area :message, :rows => 8 %>
       </div>
       <div class='actions'>
-        <%= f.submit t('.send') %>
+        <%= f.submit t('.send'), :value => "Odoslať" %>
         <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
       </div>
     <% end %>
   </div>
-<% end %>
+<% #end %>
 <%= render :partial => "/shared/content_page" %>
