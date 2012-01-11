@@ -1,16 +1,19 @@
 @font-face {
   font-family: 'myfont';
-  src: url("../fonts/light.otf") format("opentype"); }
+  src: url("../fonts/light-webfont.eot");
+  src: url("../fonts/light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/light-webfont.woff") format("woff"), url("../fonts/light-webfont.ttf") format("truetype"), url("../fonts/light-webfont.svg#webfont") format("svg"); }
 
 @font-face {
   font-family: 'myfont';
   font-variant: regular;
-  src: url("../fonts/regular.otf") format("opentype"); }
+  src: url("../fonts/regular-webfont.eot");
+  src: url("../fonts/regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/regular-webfont.woff") format("woff"), url("../fonts/regular-webfont.ttf") format("truetype"), url("../fonts/regular-webfont.svg#webfont") format("svg"); }
 
 @font-face {
   font-family: 'myfont';
   font-weight: bold;
-  src: url("../fonts/xbold.otf") format("opentype"); }
+  src: url("../fonts/xbold-webfont.eot");
+  src: url("../fonts/xbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/xbold-webfont.woff") format("woff"), url("../fonts/xbold-webfont.ttf") format("truetype"), url("../fonts/xbold-webfont.svg#webfont") format("svg"); }
 
 p {
   margin: 0; }

@@ -6,7 +6,7 @@ sk:
   site_name: "Najlepší nápad"
   redban:
     text_1: "<strong>Máš nápad</strong> ako šetriť prírodu a energie?"
-    text_2: "Daj nám o sebe vedieť do <strong>1.3.2012</strong>"
+    text_2: "Daj nám o sebe vedieť do <strong>1. Marca 2012</strong>"
   first_box:
     title: "O čo nám ide?"
     text: "Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. Jelikož slunce jasně září a na obloze byste od východu k západu hledali"
@@ -14,8 +14,8 @@ sk:
   second_box:
     title: "Ako ti môžeme pomôcť?"
     text1: "Vylepšíme tvoj nápad"
-    text2: "Nájdeme mentora"
-    text3: "Prefinancujeme prototyp"
+    text2: "Prefinancujeme prototyp"
+    text3: "Nájdeme mentora"
 
   third_box:
     title: "Aktuality"

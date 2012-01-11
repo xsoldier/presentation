@@ -46,7 +46,6 @@
     end
 
     dom_id = section[:id] || section[:yield]
-    section[:title] = nil if @page.link_url == "/contact"
     if section[:html].present?
       if section[:title]
         section[:html] = "<h1 id='#{dom_id}'>#{section[:html]}</h1>".html_safe
