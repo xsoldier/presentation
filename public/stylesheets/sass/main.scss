@@ -432,5 +432,5 @@ section {
 }
 
 .long .body #body_content_title, .long .body .inner {
-  display: none;
+  display: none !important;
 }
