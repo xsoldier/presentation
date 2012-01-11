@@ -431,6 +431,13 @@ section {
   clear: both;
 }
 
-.long .body #body_content_title, .long .body .inner {
-  display: none !important;
+.long {
+  .body {
+    #body_content_title {
+      display: none !important;
+    }
+    .inner {
+      display: none !important;
+    }
+  }
 }
