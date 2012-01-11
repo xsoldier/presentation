@@ -433,9 +433,36 @@ section {
   }
 }
 
+.video_back {
+  background: url("../images/video.png") no-repeat;
+  width: 300px;
+  height: 181px;
+  text-align: center !important;
+}
+
 .padding_div {
   padding: 15px 40px 30px 40px;
 }
+.padding_div_smaller {
+  padding: 15px 22px 30px 25px;
+}
+
+.button_video {
+  display: block;
+  width: 152px;
+  height: 33px;
+  background: url("../images/btns.png") no-repeat;
+  position: relative;
+  top: 73px;
+  left: 73px;
+  &:hover {
+    background-position: 0px -34px;
+  }
+  &:active {
+    background-position: 0px -69px;
+  }
+}
+
 
 .hr {
   width: 206px;
