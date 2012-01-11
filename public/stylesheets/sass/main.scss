@@ -425,11 +425,6 @@ section {
   padding: 15px 40px 30px 40px;
 }
 
-.hr {
-  width: 206px;
-  border-top: 1px solid $gray_border;
-  clear: both;
-}
 
 .long {
   .body {
@@ -440,4 +435,10 @@ section {
       display: none !important;
     }
   }
+}
+
+.hr {
+  width: 206px;
+  border-top: 1px solid $gray_border;
+  clear: both;
 }

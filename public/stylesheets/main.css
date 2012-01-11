@@ -304,6 +304,11 @@ section .redban {
 .padding_div {
   padding: 15px 40px 30px 40px; }
 
+.long .body #body_content_title {
+  display: none !important; }
+.long .body .inner {
+  display: none !important; }
+
 .hr {
   width: 206px;
   border-top: 1px solid #d5d5d7;
