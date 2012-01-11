@@ -301,13 +301,13 @@ section .redban {
   padding: 0 !important;
   line-height: 23px; }
 
-.padding_div {
-  padding: 15px 40px 30px 40px; }
-
 .long .body #body_content_title {
   display: none !important; }
-.long .body .inner {
+.long .body #body_content_right .inner {
   display: none !important; }
+
+.padding_div {
+  padding: 15px 40px 30px 40px; }
 
 .hr {
   width: 206px;
