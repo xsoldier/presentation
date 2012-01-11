@@ -431,8 +431,10 @@ section {
     #body_content_title {
       display: none !important;
     }
-    .inner {
-      display: none !important;
+    #body_content_right {
+      .inner {
+        display: none !important;
+      }
     }
   }
 }
