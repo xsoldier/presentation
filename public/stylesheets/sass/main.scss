@@ -424,3 +424,13 @@ section {
 .padding_div {
   padding: 15px 40px 30px 40px;
 }
+
+.hr {
+  width: 206px;
+  border-top: 1px solid $gray_border;
+  clear: both;
+}
+
+.long .body #body_content_title, .long .body .inner {
+  display: none;
+}

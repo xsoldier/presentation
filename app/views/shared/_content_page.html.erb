@@ -88,8 +88,8 @@
               <%= raw event.text %>
               <div class="clear"></div>
             </div>
+          <%= raw "<div class='hr'></div>" unless event == Event.first %>
           </div>
-          <%= raw "<hr/>" unless event == Event.first %>
         <% end %>
       <% else %>
         <div class="padding_div"><%= raw @page.content_for(:side_body) %></div>

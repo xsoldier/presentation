@@ -303,3 +303,8 @@ section .redban {
 
 .padding_div {
   padding: 15px 40px 30px 40px; }
+
+.hr {
+  width: 206px;
+  border-top: 1px solid #d5d5d7;
+  clear: both; }
