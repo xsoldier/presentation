@@ -420,12 +420,6 @@ section {
 
 }
 
-
-.padding_div {
-  padding: 15px 40px 30px 40px;
-}
-
-
 .long {
   .body {
     #body_content_title {
@@ -437,6 +431,10 @@ section {
       }
     }
   }
+}
+
+.padding_div {
+  padding: 15px 40px 30px 40px;
 }
 
 .hr {
