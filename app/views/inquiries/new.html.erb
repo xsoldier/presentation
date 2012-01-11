@@ -1,4 +1,4 @@
-<%# content_for :body_content_left do %>
+<% content_for :body_content_left do %>
   <div class='inquiries'>
     <%= form_for @inquiry do |f| %>
       <%= render :partial => "/shared/admin/error_messages",
@@ -28,5 +28,5 @@
       </div>
     <% end %>
   </div>
-<% #end %>
+<% end %>
 <%= render :partial => "/shared/content_page" %>
