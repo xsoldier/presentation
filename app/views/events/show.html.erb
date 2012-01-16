@@ -1,51 +1,41 @@
-<% content_for :body_content_title do %>
-  <%= @event.name %>
-<% end %>
+<section id='body_content'>
+  <div class="content_other">
+  <div class="long">
+    <div class="title"><%= @event.name %></div>
+    <div class="head"></div>
+    <div class="body calendar">
+      <div class="padding_div event">
+				<div class="event_date event_date_detail"><%= l @event.created_at.to_date, :format => :short %></div>
+				<div class="event_content event_content_detail"><%= raw @event.text %></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="foot"></div>
+  </div>
 
-<% content_for :body_content_left do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @event.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Event Date</h1>
-    <p>
-      <%=raw @event.event_date %>
-    </p>
-  </section>
-  <section>
-    <h1>Image</h1>
-    <p>
-      <%= image_fu @event.image, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>File</h1>
-    <p>
-      <%= link_to 'file', @event.file.url if @event.file.present? %>
-    </p>
-  </section>
-  <section>
-    <h1>Text</h1>
-    <p>
-      <%=raw @event.text %>
-    </p>
-  </section>
-<% end %>
-
-<% content_for :body_content_right do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="events">
-      <% @events.each do |event| %>
-        <li>
-          <%= link_to event.name, event_path(event) %>
-        </li>
+  <div class="third">
+    <div class="title">
+			<%= t("third_box.title") %>
+    </div>
+    <div class="head"></div>
+    <div class="body calendar">
+        <div class="events">
+				<% Event.order("id desc").each do |event| %>
+          <div class="event">
+            <div class="event_date"><%= l event.created_at.to_date, :format => :short %></div>
+            <div class="event_content">
+              <h3><%= link_to truncate(event.name, :length => 33), event %></h3>
+            	<%= truncate((strip_tags(event.text)), :length => 50) %>
+              <div class="clear"></div>
+            </div>
+          <%= raw "<div class='hr'></div>" unless event == Event.first %>
+          </div>
       <% end %>
-    </ul>
-  </aside>
-<% end %>
+					<div class="clear"></div>
+				</div>
+    </div>
+    <div class="foot"></div>
+  </div>
+</div>
 
-<%= render :partial => "/shared/content_page" %>
+</section>

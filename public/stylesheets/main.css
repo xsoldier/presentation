@@ -101,7 +101,7 @@ section .redban {
   font-size: 16pt;
   color: #bc0f0b; }
 .content_home .body {
-  height: 500px; }
+  height: 540px; }
 .content_home .first {
   float: left;
   width: 292px; }
@@ -118,7 +118,8 @@ section .redban {
     overflow: hidden; }
     .content_home .first .body p {
       padding: 10px 40px;
-      line-height: 25px; }
+      line-height: 25px;
+      margin-bottom: 20px; }
   .content_home .first .foot {
     width: 292px;
     height: 18px;
@@ -183,8 +184,8 @@ section .redban {
   .content_other .third .body {
     width: 292px;
     background: url("../images/box_body.png") repeat-y;
-    min-height: 500px;
-    max-height: 500px; }
+    min-height: 540px;
+    /*max-height: 500px;*/ }
     .content_other .third .body.contact {
       min-height: 200px; }
     .content_other .third .body p {
@@ -297,9 +298,13 @@ section .redban {
     text-transform: uppercase;
     float: left;
     width: 30%; }
+  .calendar .event .event_date_detail {
+    width: 8% !important; }
   .calendar .event .event_content {
     float: right;
     width: 70%; }
+  .calendar .event .event_content_detail {
+    width: 85% !important; }
 .calendar p {
   padding: 0 !important;
   line-height: 23px; }
@@ -313,7 +318,8 @@ section .redban {
   background: url("../images/video.png") no-repeat;
   width: 300px;
   height: 181px;
-  text-align: center !important; }
+  text-align: center !important;
+  margin-bottom: 30px; }
 
 .padding_div {
   padding: 15px 40px 30px 40px; }

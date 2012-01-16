@@ -141,7 +141,7 @@ section {
     color: $font_red;
   }
   .body {
-    height: 500px;
+    height: 540px;
   }
   .first {
     float: left;
@@ -163,6 +163,7 @@ section {
       p {
         padding: 10px 40px;
         line-height: 25px;
+        margin-bottom: 20px;
       }
     }
     .foot {
@@ -254,8 +255,8 @@ section {
       width: 292px;
       background: url("../images/box_body.png") repeat-y;
       //text-align: center;
-      min-height: 500px;
-      max-height: 500px;
+      min-height: 540px;
+      /*max-height: 500px;*/
       &.contact {
         min-height: 200px;
       }
@@ -414,9 +415,16 @@ section {
       float: left;
       width: 30%;
     }
+    .event_date_detail {
+			width: 8% !important;
+		}
     .event_content {
       float: right;
       width: 70%;
+    }
+
+    .event_content_detail {
+    	width: 85% !important;
     }
   }
   p {
@@ -444,6 +452,7 @@ section {
   width: 300px;
   height: 181px;
   text-align: center !important;
+  margin-bottom: 30px;
 }
 
 .padding_div {

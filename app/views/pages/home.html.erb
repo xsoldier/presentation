@@ -35,18 +35,18 @@
   </div>
 
   <div class="third">
-    <div class="title"><%= link_to t("third_box.title"), events_path %></div>
+    <div class="title"><%= t("third_box.title") %></div>
     <div class="head"></div>
     <div class="body calendar">
-      <% Event.order("id desc").limit(3).each do |event| %>
+      <% Event.order("id desc").limit(3).each_with_index do |event, index| %>
         <div class="event">
           <div class="event_date"><%= l event.created_at.to_date, :format => :short %></div>
           <div class="event_content">
-            <h3><%= event.name %></h3>
-            <%= raw event.text %>
+            <h3><%= link_to truncate(event.name, :length => 30), event %></h3>
+            <%= truncate((strip_tags(event.text)), :length => 43) %>
             <div class="clear"></div>
           </div>
-        <%= raw "<div class='hr'></div>" unless event == Event.first %>
+        <%= raw "<div class='hr'></div>" unless index == 2 %>
         </div>
       <% end %>
     </div>
