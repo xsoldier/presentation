@@ -37,7 +37,8 @@ body {
   background: url("../images/bg.png") repeat;
   font-family: 'myfont';
   font-variant: regular;
-  color: #5b5b5b; }
+  color: #5b5b5b;
+  margin: 0; }
 
 #page_container {
   margin: 0 auto;
@@ -56,7 +57,7 @@ header .logo {
 header nav {
   float: right;
   width: auto;
-  margin: 28px 20px; }
+  margin: 21px 20px; }
   header nav a {
     text-transform: uppercase;
     text-decoration: none;

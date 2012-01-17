@@ -57,6 +57,7 @@ body {
   font-family: 'myfont';
   font-variant: regular;
   color: $font_base;
+  margin: 0;
 }
 
 #page_container {
@@ -80,7 +81,7 @@ header {
   nav {
     float: right;
     width: auto;
-    margin: 28px 20px;
+    margin: 21px 20px;
     a {
       text-transform: uppercase;
       text-decoration: none;
